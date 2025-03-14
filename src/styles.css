@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group input {
+  border-radius: 6px;
+}
+
+.list-group-item {
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  transition: background 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+  background: #f1f1f1;
+}
+
+.task-text {
+  font-size: 1.1rem;
+  flex-grow: 1;
+  font-weight: 500;
+  color: #444;
+}
+
+.btn-sm {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .list-group-item {
+    flex-wrap: wrap;
+  }
+
+  .task-text {
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .btn-sm {
+    padding: 8px;
+  }
+}
