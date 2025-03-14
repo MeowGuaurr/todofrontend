@@ -2,14 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/todo-app/index.html",
-      "use": "@vercel/static"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/todo-frontend"
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/todo-app/$1"
+      "dest": "/dist/todo-frontend/$1"
     }
   ]
 }
+
